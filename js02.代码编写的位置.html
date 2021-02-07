@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<script type="text/javascript">
+		// 可以将js代码写入script标签中
+		alert("this is code of js");
+	</script>
+	<!-- 推荐  将js代码编织到外部js文件中，然后通过script标签引入 
+			写到外部文件，可以在不同页面同时引用，也可以利用浏览器的缓存机制。
+			script标签。一旦引入外部文件，就不可再写入。
+			若需要内部的，需要用新的script标签写入内部js
+	-->
+	<script type="text/javascript" src="">
+		
+	</script>
+	
+</head>
+<body>
+	<!-- js代码可以编写到onclick属性中 
+		当点击按钮时，js代码才会执行
+		
+		在标签属性中写入js代码，会与属性结构耦合，不方便维护，不推荐使用
+	-->
+	<button type="button" onclick="alert('123');">bun</button>
+	<!-- 将js代码可以写入超链接的herf属性中，当点击超链接时，执行js代码 -->
+	<a href="javascript:alert('123');">this is a super link</a>
+	
+	<a href="javascript:;">this is a super link</a>
+	
+	
+</body>
+</html>
